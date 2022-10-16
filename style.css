@@ -46,7 +46,7 @@ body {
 #adult-head {
     width: 200px;
     position: relative;
-    top: 180px;
+    top: 90px;
     left: 210px;
 }
 #text-bubble {
@@ -56,7 +56,7 @@ body {
     height: 100px;
     background-color: rgb(255, 217, 15);
     position: relative;
-    top: 450px;
+    top: 350px;
     left: 20px;
     border-radius: 30%;
     text-align: center;

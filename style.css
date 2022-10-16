@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    border: 0;
+}
+body {
+    background-image: url(./images/lisa-ball.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#lisa-hands {
+    position: relative;
+    top: 265px;
+    left: 22px;
+    z-index: 3;
+}
+#eye-one {
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left: 175px;
+    top: 32px;
+}
+#eye-two {
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left: 245px;
+    top: 30px;
+}
+#ball {
+    width: 145px;
+    height: 145px;
+    background-color: red;
+    position: relative;
+    border-radius: 50%;
+    top: 75px;
+    left: 26px;
+    box-shadow: 0px -1px 30px -12px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 0px -1px 30px -12px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 0px -1px 30px -12px rgba(0, 0, 0, 0.75) inset;
+}
+#adult-head {
+    width: 200px;
+    position: relative;
+    top: 180px;
+    left: 210px;
+}
+#text-bubble {
+    content: "hello";
+    color: black;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 217, 15);
+    position: relative;
+    top: 450px;
+    left: 20px;
+    border-radius: 30%;
+    text-align: center;
+    justify-content: center;
+}
+#text-bubble-text {
+    padding: 20px;
+    color: red;
+    font-size: 1.2rem;
+}
+h1 {
+    color: red;
+}
+.ballWiggle {
+    animation: ballWiggle forwards 10s infinite;
+}
+.ballDrop {
+    animation: ballDrop forwards 1s linear;
+}
+.eyeDrop {
+    animation: eyeDrop forwards 1s linear;
+}
+
+@keyframes ballWiggle {
+    0% {
+        transform: translateY(0px);
+    }
+    45% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    55% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes eyeDrop {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes ballDrop {
+    0% {
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(380px) scaleY(0.8);
+    }
+    50% {
+        transform: translateY(420px) scaleY(0.6) scaleX(1.1);
+    }
+    60% {
+        transform: translateY(380px) scaleY(0.8) scaleX(1);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -3,8 +3,8 @@ const ball = document.getElementById("ball");
 const eyeOne = document.getElementById("eye-one");
 const eyeTwo = document.getElementById("eye-two");
 const text = document.getElementById("text-bubble-text");
-let ballDropSound = new Audio("sounds/13959__adcbicycle__7.wav");
-let ballGotAwaySound = new Audio("sounds/630483__jimbo555__bouncing-ball.wav");
+// let ballDropSound = new Audio("sounds/13959__adcbicycle__7.wav");
+// let ballGotAwaySound = new Audio("sounds/630483__jimbo555__bouncing-ball.wav");
 let dialogue = [
     ["I have a ball. Perhaps you'd like to bounce it?"],
     ["Very good, for a first try"],
@@ -19,7 +19,7 @@ const theDrop = () => {
     eyeOne.classList.add("eyeDrop");
     eyeTwo.classList.add("eyeDrop");
     if (dialogueIndex === 2) {
-        ballGotAwaySound.play()
+       // ballGotAwaySound.play()
         ball.classList.add("ballGotAway");
         setTimeout(() => {
             console.log("ball got away");
@@ -32,7 +32,7 @@ const theDrop = () => {
             dialogueIndex = dialogueIndex >= 2 ? 0 : (dialogueIndex += 1);
         }, 1500);
     } else {
-        ballDropSound.play();
+        //ballDropSound.play();
         ball.classList.add("ballDrop");
         setTimeout(() => {
             console.log(dialogueIndex);
